@@ -21,23 +21,25 @@ public class Vector {
         return y2;
     }
 
-    public void equals(Vector v){
+    public boolean equals(Vector v){
         int toX = v.getX1()- x1;
         int toX1 = v.getX2()- x2;
         int toY = v.getY1()- y1;
         int toY1 = v.getY2()- y2;
+        boolean b;
         if(toX == toX1){
-            if (toY == toY1){System.out.println("true");}
-            else {System.out.println("false");}
+            if (toY == toY1){b = true;}
+            else {b = false;}
         }
-        else {System.out.println("false");}
+        else {b = false;}
+        return b;
     }
 
-    public void length(){
+    public double length(){
         int x = x2-x1;
         int y = y1-y2;
         double l = Math.hypot(x,y);
-        System.out.println(l);
+        return l;
     }
 
 }

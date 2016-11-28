@@ -8,5 +8,7 @@ public class Main {
         v.equals(v1);
         v.length();
         System.out.println(v);
+        System.out.println(v.equals(v1));
+        System.out.println(v.length());
     }
 }
